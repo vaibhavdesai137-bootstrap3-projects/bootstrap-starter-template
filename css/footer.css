@@ -4,20 +4,28 @@ footer {
     color: white;
     padding: 10px;
     height: 80px;
+    overflow: hidden;
 }
 
 footer div {
     height: 60px;
+    position: relative;
+}
+
+footer ul {
+    padding-left: 20px;
 }
 
 footer li {
-    float: left;
     list-style: none;
-    padding: 0 20px 0 10px;
+    float: left;
+    padding-right: 20px;
+    position: relative;
+    height: 60px;
+    margin-top: 15px; 
 }
 
 footer a {
-    padding: 20px;
     color: white;
 }
 
@@ -27,32 +35,39 @@ footer a:hover {
 
 footer p {
     font-size: 16px;
-    border: 1px red;
     text-align: right;
-    vertical-align: center;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+footer i {
+    margin-left: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+footer .links {
+    min-width: 140px;
+    max-width: 140px;
 }
 
 @media(max-width: 500px) {
     
     footer {
-        height: 150px;
+        height: 170px;
         text-align: center;
-    }
-
-    footer a {
-        padding: 0px;
     }
 
     footer ul {
         display: inline-block;
-        margin: 0;
-        padding: 0;
-        width: 70%;
-        margin: auto;
+        padding: 2px;
     }
 
     footer li {
+        padding-right: 10px;
+        margin-left: 4px;
+        margin-right: 0;
         float: middle;
         text-align: center;
         vertical-align: center;
